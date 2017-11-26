@@ -1,0 +1,37 @@
+*{margin:0;}
+
+
+body
+{
+	margin:0px;
+	padding:0px;
+	position:relative;
+}
+
+table
+{
+	margin:0px;
+	padding:0px;
+}
+.heading
+{
+	
+}
+
+.heading h3{
+	color: #FFF;
+	font-size: 1.4em;
+	text-transform: uppercase;
+	font-family:Verdana, Geneva, sans-serif;
+	padding:15px 0;
+	text-align: center;
+	background:#BA68C8;
+	border-radius: 5px 5px 0 0;	
+	font-weight:900;
+}
+
+.heading_name
+{
+	border-radius: 0px 0px 5px 5px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+}

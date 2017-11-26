@@ -1,0 +1,106 @@
+*{margin:0;}
+
+body
+{
+	background:url("../images/fruit.jpg");
+	padding:0;
+	position:relative;
+}
+.container
+{
+	position:relative;
+	width:100%;
+	height:auto;
+	margin:0 auto;
+	top:10%
+}
+
+#table
+{
+	width:75%;
+	background:transparent;
+	height:auto;
+	margin:0 auto;
+}
+.features
+{
+    margin:0;
+}
+.features-columns
+{
+    margin: 0;
+}
+.feature
+{
+	background-color:#9FA8DA;
+	cursor:pointer;
+    float: left;
+    width: 100%;
+	height:inherit;
+	border-radius:10%;
+    text-align: center;
+    font-size: 10px;
+    line-height: 15px;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+	border:3px solid #4FC3F7;
+	background-size: contain;
+	transition: all 0.6s linear;
+	transform:  scale(1);
+}
+.feature:hover
+{
+	background-color:rgba(255,255,255, 1);
+	border:3px solid rgba(0,0,0, .589);
+    transition: background-color 15s;
+	transition: border 5s;
+	text-shadow: 0px 0px 1px #000;
+	transform: scale(1.1) 0.6s linear;
+    -webkit-animation-duration:1s;
+}
+.feature img
+{
+	border-radius:50%;
+	height:160px;
+	width:160px;
+}
+
+.feature h4
+{
+    font-size: 25px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FF0000;
+    font-weight: bold;
+	padding-top:2px;
+    position: relative;
+    margin: 6 0 42px;
+}
+.feature p {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 900;
+    position: relative;
+    margin: 6 0 42px;
+}
+.feature h4:after
+{
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 30%;
+    height: 20%;
+    background-color: #cbcfd1;
+    content: "";
+    transition: all 0.15s linear;
+
+}
+.feature:hover h4:after
+{
+    background-color: #FF0000;
+}

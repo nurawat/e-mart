@@ -1,0 +1,108 @@
+<html>
+
+<head>
+	<title>E - Mart Login</title>
+
+        <link href="../css/style.css" rel='stylesheet' type='text/css' />
+        <script type="text/javascript">
+            
+            
+            function signin()
+            {
+                var email=document.getElementById("email").value;
+                var pass=document.getElementById("password").value;
+                var uname=document.getElementById("uname").value;
+                var add=document.getElementById("add").value;
+                var pno=document.getElementById("pno").value;
+                
+                if(pass.length > 3)
+                {
+                    if(check(email))
+                    {
+                        if(pno.length==10)
+                        {
+                            if(uname.length >0)
+                            {
+                                if(add.length > 0)
+                                {
+                                    return("signup_parser.jsp");                                
+                                    //document.getElementById("login_form").submit();
+                                }
+                                else
+                                {
+                                    alert("Address Can't Be Empty");
+                                }
+                            }
+                            else
+                            {
+                                alert("Your Name Can't Be Empty");
+                            }
+                        }
+                        else
+                        {
+                            alert('Enter 10 Digit Mobile Number');
+                        }
+                    }
+                    else
+                    {
+                        alert('Invalid Email ID ');
+                    }
+                }
+                else
+                {
+                    alert('Password Should have length more than 3');
+                }
+                
+            }
+            function check(value)
+            {        
+                  var pattern =  /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
+                  return pattern.test(value);   
+            }   
+            
+            
+        </script>
+		
+
+</head>
+<body style="margin-top: 10px">
+
+    <img style="position:fixed;left:30px;top:10px" src="../images/logo.png"/>
+				 <!-----start-main---->
+				<div class="login-form">
+					<div class="head">
+                                            <img src="../images/emart-logo.png" alt="" width="200" height="50"/>
+					</div>
+                                    <form method="post" id="login_form" action="return signin()"
+                                          style="padding-bottom: 10px;margin-top: 10px">
+                                        <li>
+						<input type="text" class="text" name="uname" id="uname"
+                                                       placeholder="Full Name"/>
+					</li>
+					<li>
+						<input type="email" class="text" name="email" id="email"
+                                                       placeholder="email@domain.com"/>
+					</li>
+                                        
+					<li>
+                                            <input type="password" placeholder="password" 
+                                                   name="password" id="password"/>                                                
+                                               
+					</li>     
+                                        <li>
+                                            <input type="text" placeholder="Phone Number" 
+                                                   name="pno" id="pno"/>                                                
+                                               
+					</li>  
+                                        <li>
+                                            <textarea name="add" id="add"></textarea>                                               
+					</li>  
+                                        <input type="submit" value="Register" style="width: 100%" onclick="">
+					<br/><br/>                                
+					
+                                  
+				</form>
+			</div>
+
+</body>
+</html>
